@@ -14,43 +14,50 @@
   <h2>Blog 1 - C language</h2>
    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fhpc-wiki.info%2Fmediawiki%2Fhpc_images%2Fthumb%2F8%2F8a%2FCompiler_Shematic.png%2F1000px-Compiler_Shematic.png&imgrefurl=https%3A%2F%2Fhpc-wiki.info%2Fhpc%2FCompiler&tbnid=64qde8gYyoN1aM&vet=12ahUKEwjv1OzM0qDzAhULbK0KHdCjC_4QMygJegUIARDjAQ..i&docid=JzAr9NLdkdpOwM&w=1000&h=257&q=compiler%20images&ved=2ahUKEwjv1OzM0qDzAhULbK0KHdCjC_4QMygJegUIARDjAQ" alt="">
   <p>
+    <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+    <p>
+       It is three o’clock in the afternoon and I have to write this post to expose my knowledge to the C programming language. The first time that I ever used C was at university. This was in Croatia and the professor was the president of the head of Education. His monotonous voice did not give me the slightest encouragement and Slavic sassy humor did not help me at all. Here is a tip. Anyone that has endured any war is most likely unable to care about your minor inconveniences. Suffering is part of the learning experience to be a better person. The professor was a really nice chap and ended up giving me his whatsapp number during the pandemic because he thought it would be the best way to communicate with his students. I ended up never calling him because I flunked calculus and was unable to do matrices in his foundational programming course. This was only less than 8  months ago. Don’t worry, the confusion is still present. Before being introduced to the C language, I first learned how to use Ruby and then Ruby on Rails. Those programming languages were easier to understand for first time programmers. It was not confusing and had no apparent relationship to the computer at all. There is also CSS or Cascading Style Sheets. This Front-End programming language does not require any compilation at all. The structure and syntax is pretty straightforward. So in comparison to the C language, there are quite a bit of steps to execute a file.
+    </p>
 
-    It is three o’clock in the afternoon and I have to write this post to expose my knowledge to the C programming language. The first time that I ever used C was at university. This was in Croatia and the professor was the president of the head of Education. His monotonous voice did not give me the slightest encouragement and Slavic sassy humor did not help me at all. Here is a tip. Anyone that has endured any war is most likely unable to care about your minor inconveniences. Suffering is part of the learning experience to be a better person. The professor was a really nice chap and ended up giving me his whatsapp number during the pandemic because he thought it would be the best way to communicate with his students. I ended up never calling him because I flunked calculus and was unable to do matrices in his foundational programming course. This was only less than 8  months ago. Don’t worry, the confusion is still present. Before being introduced to the C language, I first learned how to use Ruby and then Ruby on Rails. Those programming languages were easier to understand for first time programmers. It was not confusing and had no apparent relationship to the computer at all. There is also CSS or Cascading Style Sheets. This Front-End programming language does not require any compilation at all. The structure and syntax is pretty straightforward. So in comparison to the C language, there are quite a bit of steps to execute a file.
-
-I find it really interesting that the source code (code that we write before it becomes compiled) has to be converted into machine code. The first time I saw the machine code, it looked like a bunch of gibberish and unintelligible nonsense.
+<p>I find it really interesting that the source code (code that we write before it becomes compiled) has to be converted into machine code. The first time I saw the machine code, it looked like a bunch of gibberish and unintelligible nonsense.
 
 However, coming back to this topic at Holberton might give me more confidence in this topic. Hopefully, this attempt to explain what happens behind the scenes in the C program might solidify a basic understanding of this powerful computer language.
+</p>
 
 
 
-
-C is a mid-level computer language developed in the early 1970s to do programming for UNIX and has later influenced many other computer languages such as Java and C++. Now, in order to use C files, they have to go through a compilation process (gcc) to create a file that can be executed. The source code is not comprehensible and needs to be converted into object code. Object code or machine code looks like computer language with a lot of binary code. The compiler makes sure that the source code is error-free. After doing that, the compiler will generate the object code.
+<p>C is a mid-level computer language developed in the early 1970s to do programming for UNIX and has later influenced many other computer languages such as Java and C++. Now, in order to use C files, they have to go through a compilation process (gcc) to create a file that can be executed. The source code is not comprehensible and needs to be converted into object code. Object code or machine code looks like computer language with a lot of binary code. The compiler makes sure that the source code is error-free. After doing that, the compiler will generate the object code.
 
 Imagine an archaeologist finds a
 
 Now in the following steps, I will instruct the proper steps to compile a file in C
 
 Step 1 ) Open up the terminal, type either vi or emacs then filename.c
-Here are some examples:
+Here are some examples:</p>
 
+<p>
 $ emacs filename.c
 $ vi main.c
 $ emacs file.c
+</p>
 
+<p>It is very important that the file’s name ends in c.</p>
 
-It is very important that the file’s name ends in c.
-
+<p>
 Step 2) In the terminal type this:
 
 $ gcc filename.c -o filename
+</p>
 
 
-GCC stands for “GNU Compiler Collection”. The -o flag is used to create a specific name for the output file. If the -o option is not used, then an output file named a.out will be generated instead.
+<p>GCC stands for “GNU Compiler Collection”. The -o flag is used to create a specific name for the output file. If the -o option is not used, then an output file named a.out will be generated instead.</p>
 
+<p>
 Step 3)  The executable file is generated. Now run the executable file by doing this:
 
 $ ./file
 
+</p>
 
 
 
@@ -58,10 +65,8 @@ $ ./file
 
 
 
-
-
-
-Now, let’s dive into the compilation process and have a deeper understanding of how the compiler conversion occurs so that a C program becomes an executable file.
+<p>
+  Now, let’s dive into the compilation process and have a deeper understanding of how the compiler conversion occurs so that a C program becomes an executable file.
 
 The process can be divided into four phases:
 Pre-processing
@@ -70,8 +75,13 @@ Assembly
 Linking
 
 The first phase is the preprocessor. It receives the source code, removes all the comments from the source code, looks at the source code for special instructions called Preprocessor directives, like <stdio.h>. If the aforementioned directive is present, the preprocessor interprets the directive and then puts in the content from the <stdio.h>. Basically, the preprocessor looks at the file and gets told what to do by the preprocessor directives. If there is an arithmetic question or program, it is more than likely that <Math.h> will need to be used at the top of the file. Or else the program will be unable to run.
+</p>
 
-These directives are recognized by the preprocessor:
+
+
+
+<p>
+  These directives are recognized by the preprocessor:
 #define
 #elif
 #else
@@ -87,12 +97,13 @@ These directives are recognized by the preprocessor:
 #undef
 #using
 
+</p>
 
 
 
 
-
-The second phase is Compilation. After the expanded code by the preprocessor goes to the compiler,  what does this mean? The pre-processed code now goes into assembly code. For example, a file called file.c is run through the preprocessor and then becomes file.i after being expanded. The file.i is simply an extension of the expanded source code.
+<p>
+  The second phase is Compilation. After the expanded code by the preprocessor goes to the compiler,  what does this mean? The pre-processed code now goes into assembly code. For example, a file called file.c is run through the preprocessor and then becomes file.i after being expanded. The file.i is simply an extension of the expanded source code.
 
 The third phase is the Assembler. Now that we have our assembly code, it will be converted into object code by using an assembler. If you try to open up an assembly code file, it will be be full of characters that have no meaning to you. These files can end with .o.
 
@@ -104,6 +115,10 @@ Do you have to compile every c file whenever you want to execute it? Yes, you do
 In conclusion, I hope that this piece written by myself has helped you on your journey to understanding the purpose of the C programming language. It may appear to be very abstract and overwhelming, if you have not worked with any other programming language before. Once you understand C, you can have a deeper understanding and appreciation for other computer programming languages that use foundational components used in C.
 
 Here are my tips to become more comfortable with the C programming language: Go on Youtube and watch videos or tutorials, go on Google and find guides that can help you understand this topic better, or even better, go practice your current knowledge and make as many c files to be more comfortable. These are the best ways to learn in my opinion or just to get your feet wet. Do not rely too much on on watching others do the work you need to do.
+
+
+
+</p>
 
 
 
